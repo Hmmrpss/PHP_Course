@@ -1,0 +1,70 @@
+Homework: PHP Syntax
+
+Problem 1.	Personal Info
+Write a PHP script PersonalInfo.php. Declare a few variables. The first variable should hold your first name, the second should hold your last name, the third - your age, and the last one should hold your full name (use concatenation). The result should be printed.
+
+Problem 2.	Sum Two Numbers
+Write a PHP script SumTwoNumbers.php that decleares two variables, firstNumber and secondNumber. They should hold integer or floating-point numbers (hard-coded values). Print their sum in the output in the format "$firstNumber + $secondNumber = 2 + 5 = 7.00". The numbers should be rounded to the second number after the decimal point.
+
+Problem 3.	Dump Variable
+Write a PHP script DumpVariable.php that declares a variable. If the variable is numeric, print it by the built-in function var_dump(). If the variable is not numeric, print its type at the input. 
+
+Examples:
+Input:			Output:
+"hello"			string
+15				int(15)
+1.234			float(1.234)
+array(1,2,3)	array
+(object)[2,34]	object
+
+Problem 4.	Interval of Numbers
+Write a program, which takes two numbers as input and prints the interval of numbers between them, starting from the smaller one and ending with the larger one. Print all the numbers separated on new lines.
+
+Constraints:
+•	The numbers, which you receive will be in the interval [0…100].
+•	The two numbers, which you take as an input will not be equal.
+
+Problem 5.	Restaurant Discount
+A restaurant wants to automate their reservation process. They need a program that reads the count of people and the package from the console and calculates how much the customer should pay to book the place.
+Different halls have different prices:
+			Small Hall		Terrace		Great Hall
+Price		2500$			5000$		7500$
+Capacity	50				100			120
+
+The restaurant has discounts depending on the service package, which the group wants. You can see the discounts in the table below:
+			Normal	Gold	Platinum
+Discount	5%		10%		15%
+Price		500$	750$	1000$
+
+You should add the price of the package to the price of the hall. The discount is calculated based on the hall’s price + package’s price. 
+You should print which hall is the most suitable for the group and the price per person. If the group is bigger than 120 people – print “We do not have an appropriate hall.”.
+
+Input:
+•	First line: the group size as an integer. 
+•	Second line: the type of the package as string
+
+Output:
+Print the output in the following format:
+We can offer you the {hallName}
+The price per person is {price}$
+Format the price to the 2nd decimal place.
+
+Problem 6.	String Length
+Write a program that reads from the console a string of maximum 20 characters. If the length of the string is less than 20, the rest of the characters should be filled with *. Print the resulting string on the console.
+
+Problem 7.	Find the Letter
+Write a program, which receives a string and prints the index of a given letter in the string. The tricky part is that you will have to find not the first letter, but the nth letter.
+
+Input:
+•	On the first line, you will receive the string you are going to search through.
+•	On the second line, you will receive an array with exactly two elements:
+o	The first element will be the letter, which you have to search for.
+o	The second element will be an integer N, showing us which occurrence of the letter we are searching for.
+
+Example: If we receive the string “Programming is awesome!” and on the next line we receive the array “m 3”. We should find the third occurrence of the letter ‘m’. It can be found on 20th index.
+
+Output:
+If the nth occurrence of the letter is present in the string, print the index of that occurrence.
+If the letter is not present in the string, or there are less occurrences than N, print: 
+•	“Find the letter yourself!”
+Note: the comparison should be case sensitive.
